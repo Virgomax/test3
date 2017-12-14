@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Public page</title>
+</head>
+<body>
+  {{>header}}
+
+  <h1>{{pageTitle}}</h1>
+	<p>This is a public static page</p>
+  <p>{{screamIt welcome}}</p> <!-- leave a blank space before adding the paramenter of the helper function -->
+</body>
+
+{{>footer}} <!-- using { { > PartialName } } you can call the partial template -->
+<!-- To refresh nodemom when a hbs file is edited, you have to run: "nodemon index.js -e js,hbs" -->
+</html>
+
+
